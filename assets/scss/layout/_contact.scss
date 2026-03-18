@@ -1,0 +1,166 @@
+// contact
+.contact {
+  margin: 120rem 0;
+
+  @include media('md') {
+    margin: 60rem 0;
+  }
+
+  &_in {
+    border-radius: 25rem;
+    background: $color-white;
+    padding: 32rem 36rem;
+    display: flex;
+    align-items: start;
+    gap: 22rem;
+    position: relative;
+    overflow: hidden;
+
+    @include media('md') {
+      padding: 32rem 5rem;
+      flex-direction: column;
+    }
+  }
+
+  &_icon {
+    position: absolute;
+    left: 10rem;
+    bottom: -100rem;
+    width: 543rem;
+    height: 236rem;
+
+    @include media('md') {
+      bottom: auto;
+      right: 0;
+      left: auto;
+      top: 66rem;
+      width: 160rem;
+      height: auto;
+    }
+  }
+
+  &_left {
+    .section_title {
+
+      @include media('md') {
+        max-width: 100%;
+      }
+
+      br {
+        display: none;
+
+        @include media('md') {
+          display: block;
+        }
+      }
+
+      span {
+        @include media('md') {
+          display: block;
+        }
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18rem;
+      line-height: 139%;
+      color: $color-dark;
+      max-width: 558rem;
+      margin-top: 24rem;
+
+      @include media('md') {
+        max-width: 100%;
+      }
+    }
+  }
+
+  form {
+    padding: 60rem 55rem;
+    border-radius: 30rem;
+    border: 1rem solid $color-white;
+    width: 525rem;
+    flex-shrink: 0;
+    background: $color-pink;
+    backdrop-filter: blur(3.047619342803955px);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+
+    @include media('md') {
+      padding: 30rem 10rem;
+      width: 100%;
+    }
+
+    input,button {
+      height: 60rem;
+      width: 100%;
+      border-radius: 100rem;
+      background: $color-white;
+    }
+
+    input {
+      border: 1rem solid $color-dark;
+      font-weight: 200;
+      font-size: 18rem;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      color: $color-black;
+      padding: 16rem 20rem;
+    }
+
+    button {
+      font-weight: 700;
+      font-size: 18rem;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color-pink;
+    }
+  }
+
+  .consent {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    cursor: pointer;
+
+    &_input {
+      display: none;
+    }
+
+    &_box {
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid $color-white;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      svg {
+        opacity: 0;
+        transform: scale(0.5);
+        transition: .25s ease;
+      }
+    }
+
+    &_text {
+      font-weight: 300;
+      font-size: 12rem;
+      color: $color-white;
+    }
+
+    &_input:checked + .consent_box {
+
+      svg {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+// contact
