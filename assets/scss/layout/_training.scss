@@ -1,0 +1,139 @@
+// training
+.training {
+
+  @include media('md') {
+    padding-bottom: 90rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24rem;
+    margin-bottom: 40rem;
+
+    @include media('md') {
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 32rem;
+    }
+
+    &-left {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 32rem;
+    }
+
+    .section_title {
+      max-width: 574rem;
+
+      @include media('md') {
+        max-width: 100%;
+      }
+    }
+
+    p {
+      max-width: 553rem;
+      font-weight: 500;
+      font-size: 24rem;
+      line-height: 142%;
+      color: $color-dark;
+
+      @include media('md') {
+        max-width: 100%;
+      }
+
+      @include media('md') {
+        font-size: 18rem;
+      }
+    }
+
+    .pink_btn {
+      @include media('md') {
+        position: absolute;
+        bottom: -90rem;
+        left: 20rem;
+        width: calc(100% - 40rem);
+      }
+    }
+  }
+
+  &_cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 37rem;
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      gap: 20rem;
+    }
+  }
+
+  &_card {
+    padding: 20rem 16rem;
+    border-radius: 12rem;
+    background:
+    repeating-linear-gradient(90deg, $color-pink 0 20px, transparent 20px 40px) top,
+    repeating-linear-gradient(90deg, $color-pink 0 20px, transparent 20px 40px) bottom,
+    repeating-linear-gradient(0deg, $color-pink 0 20px, transparent 20px 40px) left,
+    repeating-linear-gradient(0deg, $color-pink 0 20px, transparent 20px 40px) right;
+    background-size: 100% 2rem, 100% 2rem, 2rem 100%, 2rem 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+
+    &-head {
+      display: flex;
+      align-items: center;
+      gap: 16rem;
+
+      .number {
+        width: 55rem;
+        height: 55rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: $color-pink;
+
+        span {
+          font-family: $font-DisruptorsScript;
+          font-weight: 400;
+          font-size: 70rem;
+          line-height: 100%;
+          color: $color-white;
+          transform: translate(-3rem, 8rem);
+        }
+      }
+
+      h3 {
+        font-family: $font-Playfair-Display;
+        font-weight: 400;
+        font-size: 32rem;
+        color: $color-dark;
+
+        @include media('md') {
+          font-size: 22rem;
+        }
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24rem;
+      color: $color-dark;
+
+      @include media('md') {
+        font-size: 18rem;
+      }
+    }
+  }
+}
+// training

@@ -155,3 +155,11 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 14rem 24rem;
   border: 1rem solid $color-grey;
 }
+
+.section_top {
+  margin-top: 120rem;
+
+  @include media('md') {
+    margin-top: 60rem;
+  }
+}

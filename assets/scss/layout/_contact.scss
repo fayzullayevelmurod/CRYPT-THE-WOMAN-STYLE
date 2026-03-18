@@ -1,11 +1,5 @@
 // contact
 .contact {
-  margin: 120rem 0;
-
-  @include media('md') {
-    margin: 60rem 0;
-  }
-
   &_in {
     border-radius: 25rem;
     background: $color-white;
