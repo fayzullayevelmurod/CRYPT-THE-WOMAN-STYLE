@@ -87,6 +87,10 @@
       height: 52rem;
       background: $color-white;
       padding: 10rem;
+      
+      @include media('md') {
+        left: 16rem;
+      }
 
       .number {
         position: absolute;

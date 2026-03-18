@@ -88,6 +88,16 @@
     flex-direction: column;
     gap: 16rem;
 
+    @include media('md') {
+      background:
+      repeating-linear-gradient(90deg, $color-pink 0 20px, transparent 20px 30px) top,
+      repeating-linear-gradient(90deg, $color-pink 0 20px, transparent 20px 30px) bottom,
+      repeating-linear-gradient(0deg, $color-pink 0 20px, transparent 20px 30px) left,
+      repeating-linear-gradient(0deg, $color-pink 0 20px, transparent 20px 30px) right;
+      background-size: 100% 2rem, 100% 2rem, 2rem 100%, 2rem 100%;
+      background-repeat: no-repeat;
+    }
+
     &-head {
       display: flex;
       align-items: center;

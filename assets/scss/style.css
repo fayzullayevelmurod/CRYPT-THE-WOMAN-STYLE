@@ -614,6 +614,11 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   padding: 10rem;
 }
+@media (max-width: 850px) {
+  .services_card .card_block {
+    left: 16rem;
+  }
+}
 .services_card .card_block .number {
   position: absolute;
   left: 15rem;
@@ -745,6 +750,13 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 16rem;
+}
+@media (max-width: 850px) {
+  .training_card {
+    background: repeating-linear-gradient(90deg, #DD55BF 0 20px, transparent 20px 30px) top, repeating-linear-gradient(90deg, #DD55BF 0 20px, transparent 20px 30px) bottom, repeating-linear-gradient(0deg, #DD55BF 0 20px, transparent 20px 30px) left, repeating-linear-gradient(0deg, #DD55BF 0 20px, transparent 20px 30px) right;
+    background-size: 100% 2rem, 100% 2rem, 2rem 100%, 2rem 100%;
+    background-repeat: no-repeat;
+  }
 }
 .training_card-head {
   display: flex;
