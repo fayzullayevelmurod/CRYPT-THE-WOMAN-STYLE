@@ -538,6 +538,12 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-top: 90rem;
   padding-bottom: 424rem;
 }
+@media (max-width: 850px) {
+  .hero {
+    padding-bottom: 43rem;
+    padding-top: 24rem;
+  }
+}
 .hero .container {
   position: relative;
 }
@@ -547,6 +553,20 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 109rem;
   text-transform: uppercase;
   color: #DD55BF;
+}
+@media (max-width: 850px) {
+  .hero_text h1 {
+    text-align: center;
+    font-size: 90rem;
+  }
+}
+.hero_text h1 br {
+  display: none;
+}
+@media (max-width: 850px) {
+  .hero_text h1 br {
+    display: block;
+  }
 }
 .hero_text p {
   max-width: 613rem;
@@ -562,11 +582,25 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #DD55BF;
 }
+@media (max-width: 850px) {
+  .hero_text p {
+    font-size: 18rem;
+    max-width: 350rem;
+  }
+}
 .hero_text ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8rem 4rem;
   max-width: 464rem;
+}
+@media (max-width: 850px) {
+  .hero_text ul {
+    margin-top: 380rem;
+    max-width: 100%;
+    position: relative;
+    z-index: 4;
+  }
 }
 .hero_text li {
   font-weight: 400;
@@ -585,12 +619,34 @@ p, h1, h2, h3, h4, h5, h6 {
 .hero_text li:last-child {
   grid-column: 1/-1;
 }
+@media (max-width: 850px) {
+  .hero_text li {
+    font-size: 15rem;
+    background: #FFFFFF;
+  }
+}
 .hero_imgs {
   position: absolute;
   top: -30rem;
   right: 0;
   width: 720rem;
   height: 690rem;
+}
+@media (max-width: 850px) {
+  .hero_imgs {
+    height: 445rem;
+    width: 488rem;
+    left: 0;
+    margin: auto;
+    top: auto;
+    bottom: 460rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero_imgs {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .hero_imgs .hero_img {
   position: absolute;
@@ -607,6 +663,12 @@ p, h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
   z-index: 3;
 }
+@media (max-width: 850px) {
+  .hero_imgs .hero_img {
+    width: 300rem;
+    height: 390rem;
+  }
+}
 .hero_imgs .hero_img_two {
   width: 232rem;
   height: 280rem;
@@ -618,6 +680,13 @@ p, h1, h2, h3, h4, h5, h6 {
   left: 0;
   transform: rotate(-10deg) translateX(20rem);
 }
+@media (max-width: 850px) {
+  .hero_imgs .hero_img_two {
+    width: 154rem;
+    height: 185rem;
+    bottom: 100rem;
+  }
+}
 .hero_imgs .circle_one {
   position: absolute;
   transform: translateY(-30rem);
@@ -626,6 +695,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: auto;
   width: 387rem;
   height: 525rem;
+}
+@media (max-width: 850px) {
+  .hero_imgs .circle_one {
+    width: 300rem;
+    transform: translateY(-50rem) translateX(50rem);
+  }
 }
 .hero_imgs .circle_two {
   position: absolute;
@@ -637,6 +712,12 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 515rem;
   height: 402rem;
 }
+@media (max-width: 850px) {
+  .hero_imgs .circle_two {
+    width: 356rem;
+    transform: translateY(-50rem) translateX(80rem);
+  }
+}
 .hero .contact {
   position: absolute;
   left: 0;
@@ -645,6 +726,14 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: auto;
   width: calc(100% - 160rem);
   z-index: 3;
+}
+@media (max-width: 850px) {
+  .hero .contact {
+    margin-top: 24rem;
+    position: static;
+    transform: translateX(-15rem);
+    width: calc(100% + 30rem);
+  }
 }
 .hero .contact_in {
   background: transparent;
@@ -661,10 +750,24 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   margin-bottom: 32rem;
 }
+@media (max-width: 850px) {
+  .hero .contact_in h2 {
+    margin-bottom: 16rem;
+    text-align: center;
+    font-size: 24rem;
+    max-width: 350rem;
+    margin: auto auto 16rem auto;
+  }
+}
 .hero .contact_in form {
   width: 100%;
   padding: 42rem 30rem;
   gap: 0;
+}
+@media (max-width: 850px) {
+  .hero .contact_in form {
+    padding: 30rem 5rem;
+  }
 }
 .hero .contact_in form .form_inputs {
   display: grid;
@@ -672,12 +775,24 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 16rem;
   margin-bottom: 16rem;
 }
-
 @media (max-width: 850px) {
-  .services {
-    margin-top: 40rem;
+  .hero .contact_in form .form_inputs {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 850px) {
+  .hero .contact_in form .form_inputs input {
+    height: 47rem;
+    font-size: 14rem;
+  }
+}
+@media (max-width: 850px) {
+  .hero .contact_in form .form_inputs button {
+    font-size: 20rem;
+    height: 54rem;
+  }
+}
+
 .services_head {
   display: flex;
   align-items: center;

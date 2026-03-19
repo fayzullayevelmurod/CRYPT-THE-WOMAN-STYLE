@@ -1,10 +1,6 @@
 // services
 .services {
 
-  @include media('md') {
-    margin-top: 40rem;
-  }
-
   &_head {
     display: flex;
     align-items: center;
