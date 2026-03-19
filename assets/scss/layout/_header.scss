@@ -34,6 +34,11 @@
       font-size: 18rem;
       line-height: 100%;
       color: $color-black;
+      transition: .3s ease;
+
+      &:hover  {
+        color: $color-pink;
+      }
     }
   }
 

@@ -1,0 +1,98 @@
+// policy
+.policy {
+  h1 {
+    font-weight: 800;
+    font-size: 60rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-pink;
+    margin-bottom: 48rem;
+
+    @include media('md') {
+      font-size: 32rem;
+      margin-bottom: 24rem;
+    }
+
+    @include media('sm') {
+      font-size: 22rem;
+    }
+  }
+
+  &_blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+
+    @include media('md') {
+      gap: 24rem;
+    }
+  }
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+
+    @include media('md') {
+      gap: 16rem;
+    }
+  }
+
+  &_title {
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+
+    @include media('md') {
+      gap: 12rem;
+    }
+
+    .number {
+      width: 42rem;
+      height: 42rem;
+      border-radius: 50%;
+      background: $color-pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: $font-Gilroy;
+      font-weight: 700;
+      font-size: 28rem;
+      color: $color-white;
+
+      @include media('md') {
+        width: 24rem;
+        height: 24rem;
+        font-size: 16rem;
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 32rem;
+      color: $color-black;
+
+      @include media('md') {
+        font-size: 18rem;
+      }
+    }
+  }
+
+  p,li {
+    font-weight: 300;
+    font-size: 22rem;
+    color: $color-black;
+
+    @include media('md') {
+      font-size: 16rem;
+    }
+
+    br {
+      @include media('md') {
+        display: none;
+      }
+    }
+  }
+}
+// policy

@@ -521,6 +521,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 18rem;
   line-height: 100%;
   color: #000000;
+  transition: 0.3s ease;
+}
+.header_link a:hover {
+  color: #DD55BF;
 }
 .header .pink_btn {
   width: 200rem;
@@ -1180,6 +1184,7 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transform: scale(0.5);
   transition: 0.25s ease;
+  width: 10rem;
 }
 .contact .consent_text {
   font-weight: 300;
@@ -1189,6 +1194,102 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact .consent_input:checked + .consent_box svg {
   opacity: 1;
   transform: scale(1);
+}
+
+.policy h1 {
+  font-weight: 800;
+  font-size: 60rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #DD55BF;
+  margin-bottom: 48rem;
+}
+@media (max-width: 850px) {
+  .policy h1 {
+    font-size: 32rem;
+    margin-bottom: 24rem;
+  }
+}
+@media (max-width: 640px) {
+  .policy h1 {
+    font-size: 22rem;
+  }
+}
+.policy_blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+}
+@media (max-width: 850px) {
+  .policy_blocks {
+    gap: 24rem;
+  }
+}
+.policy_block {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+@media (max-width: 850px) {
+  .policy_block {
+    gap: 16rem;
+  }
+}
+.policy_title {
+  display: flex;
+  align-items: center;
+  gap: 24rem;
+}
+@media (max-width: 850px) {
+  .policy_title {
+    gap: 12rem;
+  }
+}
+.policy_title .number {
+  width: 42rem;
+  height: 42rem;
+  border-radius: 50%;
+  background: #DD55BF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 28rem;
+  color: #FFFFFF;
+}
+@media (max-width: 850px) {
+  .policy_title .number {
+    width: 24rem;
+    height: 24rem;
+    font-size: 16rem;
+  }
+}
+.policy_title h3 {
+  font-weight: 500;
+  font-size: 32rem;
+  color: #000000;
+}
+@media (max-width: 850px) {
+  .policy_title h3 {
+    font-size: 18rem;
+  }
+}
+.policy p, .policy li {
+  font-weight: 300;
+  font-size: 22rem;
+  color: #000000;
+}
+@media (max-width: 850px) {
+  .policy p, .policy li {
+    font-size: 16rem;
+  }
+}
+@media (max-width: 850px) {
+  .policy p br, .policy li br {
+    display: none;
+  }
 }
 
 .footer {
@@ -1226,6 +1327,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 18rem;
   line-height: 34rem;
   color: #FFFFFF;
+  transition: 0.3s ease;
+}
+.footer_top-links a:hover {
+  color: #342e2e;
 }
 .footer ul {
   display: flex;

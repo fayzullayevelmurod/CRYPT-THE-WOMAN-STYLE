@@ -35,6 +35,11 @@
       font-size: 18rem;
       line-height: 34rem;
       color: $color-white;
+      transition: .3s ease;
+
+      &:hover  {
+        color: $color-dark;
+      }
     }
   }
 
