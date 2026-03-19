@@ -1,6 +1,5 @@
 // services
 .services {
-  margin-top: 60rem;
 
   @include media('md') {
     margin-top: 40rem;
@@ -87,7 +86,7 @@
       height: 52rem;
       background: $color-white;
       padding: 10rem;
-      
+
       @include media('md') {
         left: 16rem;
       }
