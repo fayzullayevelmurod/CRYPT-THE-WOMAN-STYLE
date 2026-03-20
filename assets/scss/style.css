@@ -929,6 +929,16 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 850px) {
+  .cryptocurrency {
+    margin-top: 18rem;
+  }
+}
+@media (max-width: 850px) {
+  .cryptocurrency .container {
+    padding: 0 10rem;
+  }
+}
 .cryptocurrency_in {
   border-radius: 24rem;
   background: #FFFFFF;
@@ -976,6 +986,14 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 283rem;
     height: 378rem;
     position: relative;
+    top: auto;
+    right: auto;
+    margin: 42rem auto auto auto;
+  }
+}
+@media (max-width: 480px) {
+  .cryptocurrency_img {
+    margin: 42rem 0 auto auto;
   }
 }
 .cryptocurrency_img .main_img {
@@ -992,6 +1010,13 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 400rem;
   height: 298rem;
 }
+@media (max-width: 850px) {
+  .cryptocurrency_img .icon {
+    top: -25rem;
+    right: auto;
+    left: -160rem;
+  }
+}
 .cryptocurrency_img .email {
   position: absolute;
   bottom: -35rem;
@@ -1000,6 +1025,14 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 360rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 850px) {
+  .cryptocurrency_img .email {
+    width: 256rem;
+    height: 255rem;
+    bottom: 13rem;
+    left: -130rem;
+  }
 }
 .cryptocurrency_blocks {
   margin-top: 48rem;

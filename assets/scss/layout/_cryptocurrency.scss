@@ -1,6 +1,16 @@
 // cryptocurrency
 .cryptocurrency {
 
+  @include media('md') {
+    margin-top: 18rem;
+  }
+
+  .container {
+    @include media('md') {
+      padding: 0 10rem;
+    }
+  }
+
   &_in {
     border-radius: 24rem;
     background: $color-white;
@@ -49,6 +59,13 @@
       width: 283rem;
       height: 378rem;
       position: relative;
+      top: auto;
+      right: auto;
+      margin: 42rem auto auto auto;
+    }
+
+    @include media('xs') {
+      margin: 42rem 0 auto auto;
     }
 
     .main_img {
@@ -64,6 +81,12 @@
       right: -180rem;
       width: 400rem;
       height: 298rem;
+
+      @include media('md') {
+        top: -25rem;
+        right: auto;
+        left: -160rem;
+      }
     }
 
     .email {
@@ -73,6 +96,13 @@
       width: 360rem;
       height: 360rem;
       object-fit: contain;
+
+      @include media('md') {
+        width: 256rem;
+        height: 255rem;
+        bottom: 13rem;
+        left: -130rem;
+      }
     }
   }
 
