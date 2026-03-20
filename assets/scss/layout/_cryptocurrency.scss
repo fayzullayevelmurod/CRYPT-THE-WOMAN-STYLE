@@ -1,0 +1,162 @@
+// cryptocurrency
+.cryptocurrency {
+
+  &_in {
+    border-radius: 24rem;
+    background: $color-white;
+    padding: 32rem 42rem;
+    position: relative;
+
+    @include media('md') {
+      padding: 32rem 10rem;
+    }
+  }
+
+  &_text {
+    .section_title {
+      font-size: 36rem;
+      max-width: 920rem;
+
+      @include media('md') {
+        font-size: 28rem;
+      }
+    }
+
+    p {
+      max-width: 700rem;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 22rem;
+      line-height: 30rem;
+      vertical-align: middle;
+      color: $color-dark;
+      margin-top: 16rem;
+
+      @include media('md') {
+        font-size: 18rem;
+      }
+    }
+  }
+
+  &_img {
+    position: absolute;
+    top: 100rem;
+    right: 42rem;
+    width: 400rem;
+    height: 480rem;
+
+    @include media('md') {
+      width: 283rem;
+      height: 378rem;
+      position: relative;
+    }
+
+    .main_img {
+      border-radius: 16rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .icon {
+      position: absolute;
+      top: -97rem;
+      right: -180rem;
+      width: 400rem;
+      height: 298rem;
+    }
+
+    .email {
+      position: absolute;
+      bottom: -35rem;
+      left: -160rem;
+      width: 360rem;
+      height: 360rem;
+      object-fit: contain;
+    }
+  }
+
+  &_blocks {
+    margin-top: 48rem;
+    position: relative;
+    z-index: 2;
+
+    @include media('md') {
+      margin-top: 36rem;
+    }
+
+    h3 {
+      font-family: $font-Playfair-Display;
+      font-weight: 600;
+      font-size: 28rem;
+      text-transform: uppercase;
+      color: $color-dark;
+      margin-bottom: 18rem;
+
+      @include media('md') {
+        margin-bottom: 24rem;
+      }
+
+      span {
+        display: inline;
+        color: $color-pink;
+      }
+    }
+
+    &-in {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 16rem 56rem;
+
+      @include media('md') {
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+  }
+
+  &_block {
+    padding: 20rem 16rem;
+    border-radius: 12rem;
+    background: $color-pink;
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+
+    @include media('md') {
+      align-items: start;
+    }
+
+    &-transparent {
+      @include media('md') {
+        display: none;
+      }
+    }
+
+    img {
+      width: 55rem;
+      height: 55rem;
+      display: flex;
+      flex-shrink: 0;
+
+      @include media('md') {
+        width: 36rem;
+        height: 36rem;
+      }
+    }
+
+    p {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 18rem;
+      line-height: 25rem;
+      color: $color-white;
+
+      @include media('md') {
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 22rem;
+      }
+    }
+  }
+}
+// cryptocurrency
